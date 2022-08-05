@@ -1,0 +1,123 @@
+:root {
+  /* Primary Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* Neutral Colors */
+  --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--Very-dark-blue-mainBG);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  display: block;
+  margin: 150px auto;
+  width: 290px;
+  padding: 20px;
+  background-color: var(--Very-dark-blue-cardBG);
+  border-radius: 13px;
+}
+.equilibrium-image {
+  width: 290px;
+  height: 290px;
+  border-radius: 10px;
+}
+.view-icon-overlay {
+  position: absolute;
+  top: 178px;
+  height: 290px;
+  width: 290px;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: hsl(178, 100%, 50%, 50%);
+  border-radius: 10px;
+}
+.view-icon {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container:hover .view-icon-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nft-title {
+  color: var(--White);
+  text-decoration: none;
+}
+.nft-title:hover {
+  color: var(--cyan);
+}
+.description {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--soft-blue);
+}
+.price-duration {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+  border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+.price {
+  color: var(--cyan);
+  font-size: 14px;
+  font-weight: 600;
+}
+.duration {
+  font-size: 14px;
+  color: var(--soft-blue);
+}
+.icon-eth {
+  height: 15px;
+  margin-right: 3px;
+  margin-bottom: -2px;
+}
+.clock-icon {
+  height: 14px;
+  margin-right: 2px;
+  margin-bottom: -2px;
+}
+.creator {
+  text-align: center;
+  font-size: 14px;
+  color: var(--soft-blue);
+}
+.name {
+  font-size: 14px;
+  color: var(--White);
+  text-decoration: none;
+}
+.name:hover {
+  color: var(--cyan);
+}
+.creator-avatar {
+  width: 27px;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.creator-section {
+  display: flex;
+  margin-bottom: -7px;
+}
+.attribution {
+  color: var(--soft-blue);
+  text-decoration: none;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--cyan);
+}
